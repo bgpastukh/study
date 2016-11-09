@@ -10,9 +10,7 @@ $textArray = explode(" ", $text);
 foreach($textArray as $value)
 {
 	if (strlen($value) < $n )
-	{
 		array_push($result, $value);
-	}	
 }
 
 $result = implode(" ", $result);
