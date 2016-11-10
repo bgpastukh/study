@@ -19,7 +19,16 @@
 
 if ($_POST)
 {
-    $array = explode(" ", $_POST['text']);
-    $result = array_unique($array);
-    echo count($result);
+    $str = $_POST['text'];
+    $array = explode(" ", $str);
+    $res = 0;
+
+    foreach ($array as $key => $value)
+{
+    if (strpos($str, $value) == strripos($str, $value))
+    {
+        $res++;
+    }
+}
+    echo $res;
 }

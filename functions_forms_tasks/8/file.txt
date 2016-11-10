@@ -4,3 +4,5 @@ Assumenda consectetur dolorem explicabo fugit odit reprehenderit soluta vel volu
 Some new string
 Some new string
 this way
+With strong tag
+<b>With b tag</b>

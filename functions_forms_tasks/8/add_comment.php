@@ -3,7 +3,7 @@
 require "index.php";
 
 $bannedWords = ['word', 'otherword'];
-$newComment = $_POST['comment'];
+$newComment = strip_tags($_POST['comment'], '<b>');
 
 foreach ($bannedWords as $value) {
     if (strpos($newComment, $value))
